@@ -1,7 +1,7 @@
 <!doctype html>
 <html lang="en">
   <head>
-    <title>xD</title>
+    <title>#MBWorldTour</title>
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -31,24 +31,35 @@
 
     <div class="container-fluid">
         <div class="container mt-4">
-            <div class="jumbotron">
-                <h1 class="display-3">"Christmas is coming"</h1>
-                <p class="lead">Michael Bublé emerges from his cave</p>
-                    <img src="/images/mb_meme_meme.png" class="img-fluid mx-auto d-block" alt="Responsive image">
-                    <hr class="my-4">
-                <p>
-                    dae defrosting??? xddd
-                </p>
-                <p class="lead">
-                    <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-                </p>
+            
+
+            <div class="col-md-12">
+                <h5>#MBWorldTour</h5>
+                <div class="card text-center">
+                    <div class="card-body">
+                        <h1 class="display-4">IT HAS BEEN</h1>
+                        <h1 id="test" class="display-1"></h1>
+                        <h1 class="display-4">DAYS SINCE 9 MAY, 2014</h1>
+
+                        <h1 class="mt-4">#MBWorldTourWHEN???!!</h1>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
 
 
 
+    <script>
+        var one_day = 1000*60*60*24;
+        var tourDate = new Date("May 9, 2014");
+        var currDate = new Date;
 
+        var difference_ms = currDate - tourDate;
+        var days = Math.round(difference_ms/one_day);
+
+        document.getElementById("test").innerHTML = days;
+    </script>
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
